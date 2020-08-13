@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchTableViewCell" rowHeight="123" id="KGk-i7-Jjw" customClass="SearchTableViewCell" customModule="Marvel_APP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2NK-Mi-b7Z">
+                        <rect key="frame" x="9" y="8" width="118" height="104"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="104" id="ZQR-Gx-7N5"/>
+                            <constraint firstAttribute="width" constant="118" id="c33-ts-u9y"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFG-Xp-lyE">
+                        <rect key="frame" x="135" y="50" width="42" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oFG-Xp-lyE" firstAttribute="leading" secondItem="2NK-Mi-b7Z" secondAttribute="trailing" constant="8" id="Dzd-JC-SZf"/>
+                    <constraint firstItem="2NK-Mi-b7Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="J23-2V-VaK"/>
+                    <constraint firstItem="2NK-Mi-b7Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="XfE-FD-wS4"/>
+                    <constraint firstItem="oFG-Xp-lyE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="50" id="eac-pk-Var"/>
+                    <constraint firstItem="oFG-Xp-lyE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="k8T-77-2Rz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="characterImage" destination="2NK-Mi-b7Z" id="Umi-mV-awX"/>
+                <outlet property="characterLabel" destination="oFG-Xp-lyE" id="fK1-Oh-Fc4"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="90.066964285714278"/>
+        </tableViewCell>
+    </objects>
+</document>
